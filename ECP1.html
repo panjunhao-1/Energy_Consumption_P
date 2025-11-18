@@ -6,12 +6,10 @@
   <meta name="description" content="新能源汽车能耗预测系统基于LSTM与卡尔曼滤波融合模型，实现高精度电池SOC预测，为新能源汽车安全行驶提供支持。">
   <meta name="keywords" content="新能源汽车, 电池SOC预测, LSTM, 卡尔曼滤波, 能耗预测">
   <title>新能源汽车能耗预测系统</title>
-  <!-- 引入外部资源 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
   
-  <!-- Tailwind 配置 -->
   <script>
     tailwind.config = {
       theme: {
@@ -65,7 +63,6 @@
 </head>
 
 <body class="bg-light text-dark antialiased">
-  <!-- 导航栏 -->
   <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm shadow-sm">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
@@ -74,7 +71,6 @@
           <span class="text-xl font-bold text-primary">新能源汽车能耗预测系统</span>
         </div>
         
-        <!-- 桌面导航 -->
         <nav class="hidden md:flex space-x-8">
           <a href="#overview" class="text-dark hover:text-primary transition-colors font-medium">研究概述</a>
           <a href="#methodology" class="text-dark hover:text-primary transition-colors font-medium">技术方法</a>
@@ -83,14 +79,12 @@
           <a href="#applications" class="text-dark hover:text-primary transition-colors font-medium">应用场景</a>
         </nav>
         
-        <!-- 移动端菜单按钮 -->
         <button id="menu-toggle" class="md:hidden text-dark hover:text-primary focus:outline-none">
           <i class="fa fa-bars text-xl"></i>
         </button>
       </div>
     </div>
     
-    <!-- 移动端导航菜单 -->
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <a href="#overview" class="block px-3 py-2 text-dark hover:bg-primary/10 hover:text-primary rounded-md">研究概述</a>
@@ -102,7 +96,6 @@
     </div>
   </header>
 
-  <!-- 英雄区域 -->
   <section class="pt-28 pb-20 gradient-bg text-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-center">
@@ -131,7 +124,6 @@
     </div>
   </section>
 
-  <!-- 研究概述 -->
   <section id="overview" class="py-20 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -176,7 +168,6 @@
     </div>
   </section>
 
-  <!-- 技术方法 -->
   <section id="methodology" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -245,7 +236,6 @@
     </div>
   </section>
 
-  <!-- 预测演示 -->
   <section id="demonstration" class="py-20 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -321,7 +311,6 @@
     </div>
   </section>
 
-  <!-- 结果对比 -->
   <section id="results" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -400,7 +389,6 @@
     </div>
   </section>
 
-  <!-- 应用场景 -->
   <section id="applications" class="py-20 bg-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -487,7 +475,6 @@
     </div>
   </section>
 
-  <!-- 页脚 -->
   <footer class="bg-dark text-white py-12">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-4 gap-8">
@@ -497,7 +484,7 @@
             <span class="text-xl font-bold">新能源汽车能耗预测系统</span>
           </div>
           <p class="text-gray-400 mb-6 max-w-md">
-            基于LSTM与卡尔曼滤波融合模型的高精度电池剩余电量预测技术，为新能源汽车产业发展提供有力支撑。研究团队来自杭州电子科技大学信息工程学院智能交通实验室。
+            基于LSTM与卡尔曼滤波融合模型的高精度电池剩余电量预测技术，为新能源汽车产业发展提供有力支撑。研究团队来自杭州电子科技大学信息工程学院。
           </p>
           <div class="flex space-x-4">
             <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="GitHub">
@@ -527,10 +514,10 @@
           <h4 class="text-lg font-bold mb-4">联系我们</h4>
           <ul class="space-y-2">
             <li class="flex items-center text-gray-400">
-              <!-- <i class="fa fa-envelope mr-2"></i> ev-prediction@hdu.edu.cn -->
+              <i class="fa fa-envelope mr-2"></i> 13355861925@163.com
             </li>
             <li class="flex items-center text-gray-400">
-              <!-- <i class="fa fa-phone mr-2"></i> +86 571-86912345 -->
+              <i class="fa fa-phone mr-2"></i> +86 13355861925
             </li>
             <li class="flex items-center text-gray-400">
               <i class="fa fa-map-marker mr-2"></i> 杭州电子科技大学信息工程学院
@@ -540,17 +527,15 @@
       </div>
       
       <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
-        <p>&copy; 2024 新能源汽车能耗预测研究团队. 保留所有权利.</p>
+        <p>&copy; 2025 新能源汽车能耗预测研究团队. 保留所有权利.</p>
       </div>
     </div>
   </footer>
 
-  <!-- JavaScript -->
+
   <script>
-    // 导航栏滚动效果 + 当前位置高亮
     window.addEventListener('scroll', function() {
       const navbar = document.getElementById('navbar');
-      // 导航栏阴影变化
       if (window.scrollY > 50) {
         navbar.classList.add('shadow-md');
         navbar.classList.remove('shadow-sm');
@@ -559,7 +544,6 @@
         navbar.classList.add('shadow-sm');
       }
       
-      // 当前区域高亮
       const sections = document.querySelectorAll('section[id]');
       let currentSection = '';
       
@@ -571,7 +555,6 @@
         }
       });
       
-      // 更新导航高亮
       document.querySelectorAll('nav a').forEach(link => {
         link.classList.remove('nav-active');
         if (link.getAttribute('href') === `#${currentSection}`) {
@@ -580,7 +563,6 @@
       });
     });
     
-    // 移动端菜单切换 + 点击外部关闭
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     
@@ -588,14 +570,12 @@
       mobileMenu.classList.toggle('hidden');
     });
     
-    // 点击页面其他区域关闭移动菜单
     document.addEventListener('click', function(e) {
       if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
         mobileMenu.classList.add('hidden');
       }
     });
     
-    // 平滑滚动
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -608,13 +588,11 @@
             behavior: 'smooth'
           });
           
-          // 关闭移动菜单
           mobileMenu.classList.add('hidden');
         }
       });
     });
     
-    // 英雄区域图表
     const heroCtx = document.getElementById('heroChart').getContext('2d');
     const heroChart = new Chart(heroCtx, {
       type: 'line',
@@ -689,7 +667,6 @@
       }
     });
     
-    // 预测对比图表
     const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
     const comparisonChart = new Chart(comparisonCtx, {
       type: 'bar',
@@ -739,7 +716,6 @@
       }
     });
     
-    // 预测演示图表
     let predictionChart;
     function initPredictionChart() {
       const predCtx = document.getElementById('predictionChart').getContext('2d');
@@ -789,27 +765,22 @@
       });
     }
     
-    // 初始化预测图表
     initPredictionChart();
     
-    // 预测功能（带加载状态）
     document.getElementById('predict-btn').addEventListener('click', function() {
       const predictBtn = this;
       const loadingIcon = document.getElementById('loading-icon');
       const initialHint = document.getElementById('initial-hint');
       const predictionInfo = document.getElementById('prediction-info');
       
-      // 显示加载状态
       predictBtn.disabled = true;
       loadingIcon.classList.remove('hidden');
       
-      // 获取输入值并验证
       const voltage = parseFloat(document.getElementById('voltage').value);
       const current = parseFloat(document.getElementById('current').value);
       const temperature = parseFloat(document.getElementById('temperature').value);
       const speed = parseFloat(document.getElementById('speed').value);
       
-      // 简单验证
       if (isNaN(voltage) || isNaN(current) || isNaN(temperature) || isNaN(speed)) {
         alert('请输入有效的参数值');
         predictBtn.disabled = false;
@@ -817,31 +788,21 @@
         return;
       }
       
-      // 模拟API请求延迟（500ms）
       setTimeout(() => {
-        // 改进的预测模型（更贴近实际影响因素）
         let baseSoc = 60;
-        // 电压影响：电压每高于350V增加0.1% SOC，反之减少
         baseSoc += (voltage - 350) * 0.12;
-        // 电流影响：放电电流越大，SOC越低（每10A减少3%）
         baseSoc -= current * 0.3;
-        // 温度影响：偏离25°C最佳温度时，每度减少0.2%
         baseSoc -= Math.abs(temperature - 25) * 0.2;
-        // 速度影响：高速行驶能耗高，每超40km/h减少0.15%
         baseSoc -= Math.max(0, speed - 40) * 0.15;
-        // 随机噪声（模拟模型误差）
         baseSoc += (Math.random() - 0.5) * 2;
         
-        // 限制在合理范围（5%-95%）
         const predictedSoc = Math.max(5, Math.min(95, baseSoc)).toFixed(1);
         
-        // 显示结果
         document.getElementById('soc-value').textContent = predictedSoc + '%';
         initialHint.classList.add('hidden');
         predictionInfo.classList.remove('hidden');
         
-        // 更新预测图表
-        const lastValue = 58; // 最后一个历史值
+        const lastValue = 58; 
         const delta = (lastValue - parseFloat(predictedSoc)) / 5;
         const predictData = [
           null, null, null, null, null, null, null, null, null, lastValue,
@@ -859,7 +820,6 @@
         ];
         predictionChart.update();
         
-        // 恢复状态
         predictBtn.disabled = false;
         loadingIcon.classList.add('hidden');
       }, 500);
